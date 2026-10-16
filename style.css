@@ -1,0 +1,165 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: #f1f7fc;
+	color: #18324b;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	padding: 28px 20px;
+	background: #1769aa;
+	color: white;
+	text-align: center;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 32px;
+}
+
+header p {
+	margin: 8px 0 0;
+}
+
+main {
+	width: min(100% - 32px, 760px);
+	margin: 28px auto;
+}
+
+section,
+.post {
+	margin-bottom: 24px;
+	padding: 22px;
+	border: 1px solid #d6e5f2;
+	border-radius: 8px;
+	background: white;
+}
+
+h2 {
+	margin: 0 0 18px;
+	color: #14558a;
+	font-size: 21px;
+}
+
+label {
+	display: block;
+	margin: 14px 0 6px;
+	font-weight: bold;
+}
+
+input,
+textarea {
+	width: 100%;
+	padding: 11px;
+	border: 1px solid #b9ccdc;
+	border-radius: 5px;
+	color: #18324b;
+	font: inherit;
+}
+
+textarea {
+	min-height: 84px;
+	resize: vertical;
+}
+
+input[type="file"] {
+	padding: 8px;
+	background: #f8fbfe;
+}
+
+button {
+	margin-top: 14px;
+	padding: 11px 16px;
+	border: 0;
+	border-radius: 5px;
+	background: #1769aa;
+	color: white;
+	cursor: pointer;
+	font: inherit;
+	font-weight: bold;
+}
+
+button:hover {
+	background: #0e4f84;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+	outline: 3px solid #8cc8f2;
+	outline-offset: 2px;
+}
+
+.post-image {
+	display: block;
+	width: 100%;
+	max-height: 480px;
+	margin: 16px 0;
+	border-radius: 5px;
+	background: #eaf2f8;
+	object-fit: contain;
+}
+
+.post-date,
+.empty-message {
+	color: #587087;
+	font-size: 14px;
+}
+
+.post-caption {
+	white-space: pre-wrap;
+}
+
+.comments {
+	margin-top: 20px;
+	padding-top: 14px;
+	border-top: 1px solid #dce8f1;
+}
+
+.comments h3 {
+	margin: 0 0 12px;
+	color: #14558a;
+	font-size: 17px;
+}
+
+.comment {
+	margin: 10px 0;
+	padding: 10px 12px;
+	border-left: 3px solid #83bce5;
+	background: #f4f9fd;
+	white-space: pre-wrap;
+}
+
+.comment-form {
+	margin-top: 14px;
+}
+
+.comment-form input {
+	margin-top: 8px;
+}
+
+.comment-form button {
+	margin-top: 8px;
+}
+
+footer {
+	padding: 20px;
+	color: #587087;
+	text-align: center;
+	font-size: 14px;
+}
+
+@media (max-width: 520px) {
+	header h1 {
+		font-size: 27px;
+	}
+
+	section,
+	.post {
+		padding: 17px;
+	}
+}

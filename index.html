@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Blog da Irani</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Blog da Irani</h1>
+		<p>Fotos, momentos e histórias para compartilhar</p>
+	</header>
+
+	<main>
+		<section aria-labelledby="new-post-title">
+			<h2 id="new-post-title">Nova publicação</h2>
+			<form id="post-form">
+				<label for="post-image-input">Escolha uma imagem</label>
+				<input id="post-image-input" type="file" accept="image/*" required>
+
+				<label for="post-caption-input">Escreva uma legenda</label>
+				<textarea id="post-caption-input" placeholder="O que você gostaria de contar?" required></textarea>
+
+				<button type="submit">Publicar</button>
+			</form>
+		</section>
+
+		<section aria-labelledby="posts-title">
+			<h2 id="posts-title">Publicações</h2>
+			<div id="posts-list" aria-live="polite"></div>
+		</section>
+	</main>
+
+	<footer>Feito com carinho por Irani</footer>
+	<script src="script.js" defer></script>
+</body>
+</html>
